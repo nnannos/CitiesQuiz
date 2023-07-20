@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.android.citiesquiz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+             >
+
+        <ImageView
+            android:id="@+id/cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cities" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cities"
+            android:background="#12973A"
+            android:onClick="TotalScore"
+            android:text="@string/submit_button" />
+
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cities"
+            android:layout_alignRight="@+id/cities"
+            android:background="#ED301D"
+            android:onClick="clearAnswers"
+            android:text="@string/clear_button" />
+
+    </RelativeLayout>
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- [Question 1] ************************************** -->
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q1_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q1"/>
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q1" />
+
+        <EditText
+            android:id="@+id/q_1"
+            style="@style/edit_text" />
+
+        <View style="@style/horizontal_line" />
+
+        <!-- [Question 2] ************************************** -->
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q2_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q2"/>
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q2" />
+
+        <EditText
+            android:id="@+id/q_2"
+            style="@style/edit_text" />
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question 3] ************************************** -->
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q3_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q3"/>
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q3" />
+
+        <EditText
+            android:id="@+id/q_3"
+            style="@style/edit_text" />
+
+        <View style="@style/horizontal_line" />
+
+        <!-- [Question 4] ************************************** -->
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q4_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q4"/>
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q4" />
+
+        <EditText
+            android:id="@+id/q_4"
+            style="@style/edit_text" />
+
+
+        <!-- [Question 5] ************************************** -->
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q5_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q5"/>
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q5" />
+
+        <EditText
+            android:id="@+id/q_5"
+            style="@style/edit_text" />
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question no.6] ************************************** -->
+
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q6_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q6" />
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q6" />
+
+        <CheckBox
+            android:id="@+id/q_6a"
+            style="@style/checkbox"
+            android:text="@string/q6a" />
+
+        <CheckBox
+            android:id="@+id/q_6b"
+            style="@style/checkbox"
+            android:text="@string/q6b" />
+
+        <CheckBox
+            android:id="@+id/q_6c"
+            style="@style/checkbox"
+            android:text="@string/q6c" />
+
+        <CheckBox
+            android:id="@+id/q_6d"
+            style="@style/checkbox"
+            android:text="@string/q6d" />
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question no.7] ************************************** -->
+
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q7_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q7" />
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q7" />
+
+        <RadioGroup
+            android:id="@+id/radio_7"
+            style="@style/radio_group">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q7a" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q7b" />
+
+            <RadioButton
+                android:id="@+id/q_7"
+                style="@style/radio_button"
+                android:text="@string/q7c" />
+        </RadioGroup>
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question no.8] ************************************** -->
+
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q8_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q8" />
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q8" />
+
+        <RadioGroup
+            android:id="@+id/radio_8"
+            style="@style/radio_group">
+
+            <RadioButton
+                android:id="@+id/q_8"
+                style="@style/radio_button"
+                android:text="@string/q8a" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q8b" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q8c" />
+        </RadioGroup>
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question no.9] ************************************** -->
+
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q9_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q9" />
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q9" />
+
+        <RadioGroup
+            android:id="@+id/radio_9"
+            style="@style/radio_group">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q9a" />
+
+            <RadioButton
+                android:id="@+id/q_9"
+                style="@style/radio_button"
+                android:text="@string/q9b" />
+
+            <RadioButton
+
+                style="@style/radio_button"
+                android:text="@string/q9c" />
+        </RadioGroup>
+
+        <View style="@style/horizontal_line" />
+
+
+        <!-- [Question no.10] ************************************** -->
+
+        <TextView
+            style="@style/question_header"
+            android:text="@string/q10_header" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/q10" />
+
+        <ImageView
+            style="@style/question_image"
+            android:src="@drawable/q10" />
+
+        <RadioGroup
+            android:id="@+id/radio_10"
+            style="@style/radio_group">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:text="@string/q10a" />
+
+            <RadioButton
+
+                style="@style/radio_button"
+                android:text="@string/q10b" />
+
+            <RadioButton
+                android:id="@+id/q_10"
+                style="@style/radio_button"
+                android:text="@string/q10c" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
+
+

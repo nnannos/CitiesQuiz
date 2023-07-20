@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Cities Quiz</string>
+    <string name="clear_button">CLEAR</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="q1_header">Question1:</string>
+    <string name="q2_header">Question2:</string>
+    <string name="q3_header">Question3:</string>
+    <string name="q4_header">Question4:</string>
+    <string name="q5_header">Question5:</string>
+    <string name="q6_header">Question6:</string>
+    <string name="q7_header">Question7:</string>
+    <string name="q8_header">Question8:</string>
+    <string name="q9_header">Question9:</string>
+    <string name="q10_header">Question10:</string>
+
+    <string name="q1">Which city is this?</string>
+    <string name="q2">Which city of Spain is this?</string>
+    <string name="q3">What is the name of this famous city?</string>
+    <string name="q4">Which romantic city of Italy is this?</string>
+    <string name="q5">Which city is the capital of Italy?</string>
+
+    <string name="q6">Select two Greek Cities</string>
+    <string name="q6a">Thessaloniki</string>
+    <string name="q6b">Athens</string>
+    <string name="q6c">Hamburg</string>
+    <string name="q6d">Palermo</string>
+
+    <string name="q7">Select the name of the city in the picture</string>
+    <string name="q7a">Athens</string>
+    <string name="q7b">London</string>
+    <string name="q7c">Paris</string>
+
+    <string name="q8">Find the city in the picture</string>
+    <string name="q8a">Jerusalim</string>
+    <string name="q8b">Moscow</string>
+    <string name="q8c">Paris</string>
+
+    <string name="q9">Recognize the city in the picture</string>
+    <string name="q9a">Hong Kong</string>
+    <string name="q9b">Beijing</string>
+    <string name="q9c">Instabul</string>
+
+    <string name="q10">Can you tell which city is this?</string>
+    <string name="q10a">Rome</string>
+    <string name="q10b">Palermo</string>
+    <string name="q10c">Moscow</string>
+
+    <string name="q1_correct_answer">athens</string>
+    <string name="q2_correct_answer">valencia</string>
+    <string name="q3_correct_answer">london</string>
+    <string name="q4_correct_answer">venice</string>
+    <string name="q5_correct_answer">rome</string>
+
+    <string name="all_reset">All answers are cleared</string>
+</resources>
